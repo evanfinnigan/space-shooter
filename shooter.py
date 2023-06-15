@@ -1,11 +1,5 @@
 from pygame import *
  
-#background music
-# mixer.init()
-# mixer.music.load('space.ogg')
-# mixer.music.play()
-
- 
 #we need the following images:
 img_back = "galaxy.jpg" #game background
 img_hero = "rocket.png" #hero
@@ -32,6 +26,8 @@ class GameSprite(sprite.Sprite):
 class Bullet(GameSprite):
     def update(self):
         self.rect.y -= self.speed
+
+# Some extra code blah blah blah
 
 #main player class
 class Player(GameSprite):
